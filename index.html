@@ -1,25 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 1</title>
-    <link rel = "stylesheet" href = "style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header, section, .discover-more, .grid-container {
+      margin-bottom: 20px;
+    }
+    header {
+      text-align: center;
+    }
+    .video-container {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .discover-more {
+      text-align: center;
+      padding-top: 2%;
+    }
+    .discover-more button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    section {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .grid-container {
+      display: flex;
+      gap: 20px;
+    }
+    .grid-item {
+      flex: 1;
+      background-color: #ddd;
+      height: 150px;
+    }
+    .behind-the-scenes {
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1 style = "color:blue;"> the</h1>
-    <h2> the</h2>
-    <h3> the</h3>
-    <h4> the</h4>
-    <h5> the</h5>
-    <h6> the</h6>
-    <p>
-        Neil Postman’s idea in "Amusing Ourselves to Death" was spot on about how entertainment would take over serious discussions, especially through TV and social media. He worried that important issues would get simplified and real information would get lost, which is what we see now with Instagram, TikTok, and YouTube. These platforms often focus more on being entertaining than on providing deep or accurate information. But Postman didn’t fully predict the good side of digital communication. The internet and social media also allow for more detailed and interactive discussions. Podcasts, long articles, and online forums let people dive deeper into complex topics, showing that not all visual media hurt the quality of public conversations.
-        <br>
-        Silicon Valley, near San Francisco, California, is the top place for technology today. It's where big tech companies like Apple, Google, and Facebook started. Silicon Valley is known for creating new tech ideas and businesses. People there are always working on new inventions and getting money to start new tech projects. This makes Silicon Valley the main center for tech progress and digital change.
-
-    </p>
-    <img src = "img/image3.jpg">
+  <div class="container">
+    <header>
+      <h1>Whispers of the Campus</h1>
+      <p>Tagline</p>
+    </header>
     
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ACtPX0l3IfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="discover-more">
+      <button>Discover More</button>
+    </div>
+    
+    <section>
+      <h2>Description</h2>
+      <p>Description text goes here...</p>
+    </section>
+    
+    <section>
+      <h2>Shooting Process Description</h2>
+      <p>Shooting process description text goes here...</p>
+    </section>
+    
+    <section class="grid-container">
+      <div class="grid-item">Editing Process</div>
+      <div class="grid-item">Editing Process</div>
+      <div class="grid-item">Editing Process</div>
+    </section>
+    
+    <div class="behind-the-scenes">
+      <h2>Behind the Scenes</h2>
+      <p>Behind the scenes content goes here...</p>
+    </div>
+  </div>
 </body>
 </html>
