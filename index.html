@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whispers of the campus</title>
+  <title>Assignment 1</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      background-color: black;
     }
     .container {
       width: 80%;
@@ -21,6 +22,8 @@
     }
     header {
       text-align: center;
+      color: white;
+      font-size: 25pt;
     }
     .video-container {
       width: 100%;
@@ -34,15 +37,23 @@
       left: 0;
       width: 100%;
       height: 100%;
+      border-color: white;
+      border-width: 2pt;
     }
     .discover-more {
       text-align: center;
       padding-top: 2%;
     }
-    .discover-more button {
+    .discover-more a { /* Changed from button to a */
+      display: inline-block;
       padding: 10px 20px;
       font-size: 1em;
       cursor: pointer;
+      text-decoration: none; /* Remove underline from link */
+      background-color: white; /* Button background color */
+      color: black; /* Button text color */
+      border: none; /* No border */
+      border-radius: 4px; /* Rounded corners */
     }
     section {
       background-color: #f9f9f9;
@@ -72,14 +83,14 @@
     </header>
     
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/ACtPX0l3IfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/O7_9QFoOwLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     
     <div class="discover-more">
-      <button>Discover More</button>
+      <a href="#description">Discover More</a> 
     </div>
     
-    <section>
+    <section id="description">
       <h2>Description</h2>
       <p>Description text goes here...</p>
     </section>
