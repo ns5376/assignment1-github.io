@@ -4,82 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 1</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: black;
-    }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header, section, .discover-more, .grid-container {
-      margin-bottom: 20px;
-    }
-    header {
-      text-align: center;
-      color: white;
-      font-size: 25pt;
-    }
-    .video-container {
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-      position: relative;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-color: white;
-      border-width: 2pt;
-    }
-    .discover-more {
-      text-align: center;
-      padding-top: 2%;
-    }
-    .discover-more a { /* Changed from button to a */
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-      text-decoration: none; /* Remove underline from link */
-      background-color: white; /* Button background color */
-      color: black; /* Button text color */
-      border: none; /* No border */
-      border-radius: 4px; /* Rounded corners */
-    }
-    section {
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
-    .grid-container {
-      display: flex;
-      gap: 20px;
-    }
-    .grid-item {
-      flex: 1;
-      background-color: #ddd;
-      height: 150px;
-    }
-    .behind-the-scenes {
-      background-color: #f9f9f9;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Whispers of the Campus</h1>
-      <p>Tagline</p>
+      <p><i>Finding Peace in Every Corner</i></p>
     </header>
     
     <div class="video-container">
@@ -91,25 +22,40 @@
     </div>
     
     <section id="description">
-      <h2>Description</h2>
-      <p>Description text goes here...</p>
+      <h2>About the Film</h2>
+      <p>"Whispers of the Campus" is more than just a film; it's a personal journey through the spaces I've found solace in during my time at NYUAD. As a student, finding moments of tranquility amidst the rush of academic life was vital. Each scene of this film reflects the spots where I paused, allowing peace to wash over me in the midst of busy days. Each frame of this film was chosen not only for its aesthetic beauty but for its personal significance. From the quiet mornings spent in the palms, where the only sound was the whisper of turning pages, to the calming meals had when D2 was nearly empty, these are the places that provided me a brief escape. This film invites you to see NYUAD through my eyes, to experience the peace I found in these little sanctuaries scattered across the campus.</p>
     </section>
     
     <section>
-      <h2>Shooting Process Description</h2>
-      <p>Shooting process description text goes here...</p>
+      <h2>Behind the Scenes</h2>
+      <p>Creating this film was as much about capturing beauty as it was about reflecting on my own experiences at NYUAD. Behind each shot is a story of a day when I needed to breathe, to slow down, to find my center again. This section shares those stories and the artistic challenges of conveying the serenity that these moments held for me.</p>
     </section>
     
     <section class="grid-container">
-      <div class="grid-item">Editing Process</div>
-      <div class="grid-item">Editing Process</div>
-      <div class="grid-item">Editing Process</div>
+      <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/img8.jpg" alt="Editing Process 1" class="carousel-image active">
+            <img src="img/img2.jpg" alt="Editing Process 2" class="carousel-image">
+            <img src="img/img.jpg" alt="Editing Process 3" class="carousel-image">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
     </section>
-    
-    <div class="behind-the-scenes">
-      <h2>Behind the Scenes</h2>
-      <p>Behind the scenes content goes here...</p>
-    </div>
-  </div>
+
+    <section>
+      <h2>Significance of Locations</h2>
+      <h3>Palms</h3>
+      <p></p>The palms scattered around our campus are more than just part of the landscape; they are like silent guardians watching over us. Whenever I felt overwhelmed, I’d look out at these towering figures, standing firm against the sky, and find a moment of tranquility. Their graceful presence always reminded me of the steadiness needed amidst life’s chaos. They symbolize an oasis of calm in the academic desert, a visual breath of fresh air that I wanted to share through my film.
+        
+      <h3>Sitting Area in Front of D2 </h3>
+      <p>This sitting area has been the backdrop to many of my cherished conversations and light-hearted meals with friends. It’s where we gather to share stories from our corners of the world, making it a melting pot of cultures and ideas. I included this spot in the film to capture the essence of community at NYUAD—the laughter, the debates, the shared meals—that stitches our diverse community together. It’s a reminder that learning isn’t just about attending lectures but about the connections we forge over shared spaces and experiences.
+      
+      </p>
+      <h3>Exit from Campus (Sunset View)</h3>
+      <p>One of the campus exits near the bookstore has become my go-to place for watching sunsets. It’s not just a physical exit, but a doorway to a moment of peace amid my bustling college life. While this spot was not filmed during sunset for the project, it’s here I often find myself after a long day, watching as the sun dips below the horizon.</p>
+    </section>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
