@@ -1,130 +1,129 @@
 body {
-    font-family: sans-serif;
+    font-family: sans-serif; /* Sets a clean, modern font for body content */
     color: rgb(164, 161, 161); /* Light grey text color for better readability on dark backgrounds */
     background-color: #121212; /* Darker shade for better contrast and less eye strain */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 13pt;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-size: 13pt; /* Standard font size for better readability */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 15px;
+    width: 80%; /* Limits the container's width to 80% of the viewport width */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 15px; /* Rounds the corners of the container */
 }
 
 header, section, .discover-more, .grid-container {
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
+    margin-bottom: 20px; /* Adds space below each section for separation */
+    border-radius: 15px; /* Rounds the corners of these elements */
+    text-align: center; /* Centers text inside these elements */
 }
 
 header {
-    text-align: center;
-    font-family: 'Arial'; /* More formal and distinct font for headings */
-    color: rgb(164, 161, 161); /* Using orange color for headings to add vibrancy */
-    font-size: 28pt; /* Slightly larger for better prominence */
+    text-align: center; /* Centers text inside the header */
+    font-family: 'Arial'; /* Uses Arial font for a more formal appearance */
+    color: rgb(164, 161, 161); /* Light grey color for header text */
+    font-size: 28pt; /* Larger font size for header to make it more prominent */
 }
 
 .video-container {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
+    width: 100%; /* Full width to maximize video embedding space */
+    height: 0; /* Starts with zero height to use padding-bottom for aspect ratio */
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 videos */
+    position: relative; /* Allows absolute positioning of iframe within */
 }
 
 .video-container iframe {
-    position: absolute;
+    position: absolute; /* Absolutely positions iframe to cover the container */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    border-color: white;
-    border-width: 2pt;
-    border-radius: 15px;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border-color: white; /* White border color */
+    border-width: 2pt; /* Thickness of the border */
+    border-radius: 15px; /* Rounds the corners of the iframe */
 }
 
 .discover-more {
-    text-align: center;
-    padding-top: 2%;
-    border-radius: 15px;
+    text-align: center; /* Centers content of the discover more section */
+    padding-top: 2%; /* Adds top padding */
+    border-radius: 15px; /* Rounds the corners */
 }
 
 .discover-more a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    text-decoration: none;
-    background-color:rgb(164, 161, 161); /* Teal background for buttons */
-    color: #060505; /* White text for better visibility */
-    border: none;
-    border-radius: 4px;
+    display: inline-block; /* Makes the link behave like a block for padding */
+    padding: 10px 20px; /* Padding inside the link for better clickability */
+    font-size: 1em; /* Standard font size for the link */
+    cursor: pointer; /* Changes cursor to pointer to indicate clickable */
+    text-decoration: none; /* Removes underline from link */
+    background-color:rgb(164, 161, 161); /* Light grey background for visibility */
+    color: #060505; /* Nearly black text for contrast */
+    border: none; /* No border for a clean look */
+    border-radius: 4px; /* Slightly rounded corners for the link */
 }
 
 section {
-    background-color: #1a1a1a; /* Slightly lighter black for sections */
-    padding: 20px;
-    color: rgb(164, 161, 161); /* Ensuring text is white for readability */
-    
+    background-color: #1a1a1a; /* Slightly lighter black for section backgrounds */
+    padding: 20px; /* Padding inside sections */
+    color: rgb(164, 161, 161); /* Light grey text for readability */
 }
 
 .grid-container {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Uses flexbox for layout */
+    gap: 20px; /* Space between flex items */
 }
 
 .grid-item {
-    flex: 1;
-    background-color: #333333; /* Medium dark background for grid items */
-    height: 150px;
+    flex: 1; /* Each item will take equal space */
+    background-color: #333333; /* Medium dark color for grid items */
+    height: 150px; /* Fixed height for grid items */
 }
 
 .carousel {
-    position: relative;
-    width: 50%;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 15px;
+    position: relative; /* Relative positioning for navigation buttons */
+    width: 50%; /* Carousel width as a percentage of its container */
+    max-width: 600px; /* Maximum width to maintain usability */
+    margin: auto; /* Centers carousel horizontally */
+    border-radius: 15px; /* Rounded corners for the carousel */
 }
 
 .carousel-images img {
-    width: 100%;
-    display: none;
-    border-radius: 15px;
+    width: 100%; /* Images take full width of their container */
+    display: none; /* Hides images by default */
+    border-radius: 15px; /* Rounded corners for images */
 }
 
 .carousel-image.active {
-    display: block;
+    display: block; /* Shows the active image */
 }
 
 button.prev, button.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.8);
+    cursor: pointer; /* Indicates that the buttons are clickable */
+    position: absolute; /* Positions buttons absolutely within the carousel */
+    top: 50%; /* Centers buttons vertically */
+    width: auto; /* Auto width based on content */
+    margin-top: -22px; /* Adjusts the vertical position to center the buttons */
+    padding: 16px; /* Padding inside the buttons */
+    color: white; /* White text color for visibility */
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 18px; /* Larger font size for readability */
+    transition: 0.6s ease; /* Smooth transition for hover effects */
+    border-radius: 0 3px 3px 0; /* Rounded corners for the right side of prev and left side of next */
+    user-select: none; /* Prevents text selection */
+    background-color: rgba(0,0,0,0.8); /* Semi-transparent black background */
 }
 
 button.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 0; /* Positions the next button on the right edge */
+    border-radius: 3px 0 0 3px; /* Rounds the left corners */
 }
 
 button.prev {
-    left: 0;
+    left: 0; /* Positions the prev button on the left edge */
 }
 
 button:hover {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,1); /* Darker background on hover for better visibility */
 }
